@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mathnawi • Jilid Satu</title>
+
+  <link rel="stylesheet" href="./css/app.css" />
+
+</head>
+
+<body>
+
+  <!-- =========================
+       READING PROGRESS
+  ========================== -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- =========================
+       APP HEADER (FIXED + PRO)
+  ========================== -->
+  <header class="app-header">
+
+    <!-- LEFT: MENU -->
+    <div class="header-left">
+      <button
+        class="icon-btn menu-btn"
+        id="menuBtn"
+        aria-label="Buka Menu"
+      >
+        ☰
+      </button>
+    </div>
+
+    <!-- CENTER: TITLE -->
+    <div class="header-center">
+      <h2 class="app-title">Mathnawi Jilid 1</h2>
+    </div>
+
+    <!-- RIGHT: ACTIONS -->
+    <div class="header-right">
+
+      <button
+  class="icon-btn theme-btn"
+  id="themeBtn"
+  aria-label="Ganti Tema"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+    <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"
+      stroke="currentColor" stroke-width="2"
+      stroke-linecap="round"/>
+  </svg>
+</button>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+       OVERLAY
+  ========================== -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- =========================
+       SIDEBAR
+  ========================== -->
+  <aside id="sidebar">
+
+    <div class="sidebar-header">
+
+      <h2 class="sidebar-title" onclick="window.location.href='index.html'">
+  Daftar Bab
+</h2>
+
+      <button
+        class="close-btn"
+        id="closeBtn"
+        aria-label="Tutup Menu"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <ul class="nav0-list" id="nav0List"></ul>
+
+  </aside>
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+  <main class="home-page">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-cover">
+        <img src="./img/hero-1.jpg" alt="Sampul Kitab Mathnawī" />
+      </div>
+
+      <div class="hero-content">
+
+        <h1 class="hero-title">
+          Mathnawi
+          <span>Jilid Satu</span>
+        </h1>
+
+        <p class="hero-text">
+          Sebuah samudra hikmah dari Maulana Jalāluddīn Rūmī
+          yang mengalir melalui syair, kisah, dan simbol-simbol
+          ruhani tentang cinta, jiwa, dan perjalanan menuju Tuhan.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- INFO -->
+    <section class="info-section">
+
+      <div class="info-card">
+        <span>✦</span>
+        <h3>Syair Ruhani</h3>
+        <p>Ribuan bait penuh makna yang menghidupkan hati dan perenungan.</p>
+      </div>
+
+      <div class="info-card">
+        <span>☾</span>
+        <h3>Kisah Simbolik</h3>
+        <p>Cerita alegoris tentang manusia, cinta, dan pencarian spiritual.</p>
+      </div>
+
+      <div class="info-card">
+        <span>❖</span>
+        <h3>Tasawuf Klasik</h3>
+        <p>Warisan spiritual Islam Persia yang mendalam dan abadi.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       SEARCH OVERLAY
+  ========================== -->
+  <div class="search-overlay" id="searchOverlay">
+
+    <div class="search-header">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari bab, teks, atau kata..."
+        autocomplete="off"
+      />
+
+      <button id="closeSearch" aria-label="Tutup">
+        ×
+      </button>
+
+    </div>
+
+    <div class="search-results" id="searchResults"></div>
+
+  </div>
+  
+  <audio id="clickSound" preload="auto">
+  <source src="audio/click.mp3" type="audio/mpeg">
+</audio>
+  <!-- =========================
+       SCRIPT
+  ========================== -->
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
