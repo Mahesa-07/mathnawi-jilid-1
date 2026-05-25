@@ -1,0 +1,28 @@
+@media(max-width:768px){
+
+  main{
+
+    padding:
+    50px 16px 35px;
+  }
+
+  aside{
+
+    width:300px;
+  }
+
+  .hero{
+
+    padding:24px 20px;
+  }
+
+  .hero-title{
+
+    font-size:34px;
+  }
+
+  .hero-title span{
+
+    font-size:16px;
+  }
+}

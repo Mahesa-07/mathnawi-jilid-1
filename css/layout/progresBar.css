@@ -1,0 +1,116 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --muted: rgba(0,0,0,0.6);
+  --card: rgba(0,0,0,0.05);
+  --accent: #6b5bff;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+body.dark {
+  --bg: #0f0f12;
+  --text: #f5f5f5;
+  --muted: rgba(255,255,255,0.6);
+  --card: rgba(255,255,255,0.08);
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+/* =========================
+   READING PROGRESS
+========================= */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--accent);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* =========================
+   HEADER PRO MAX (AUTO HIDE STYLE READY)
+========================= */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 14px;
+
+  background: var(--bg);
+  backdrop-filter: blur(12px);
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.app-header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* =========================
+   SEARCH OVERLAY PRO UX
+========================= */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: var(--bg);
+  display: none;
+
+  flex-direction: column;
+  z-index: 2000;
+}
+
+.search-overlay.active {
+  display: flex;
+}
+
+.search-header {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+}
+
+.search-header input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+}
+
+/* =========================
+   CARD BACAAN (EBOOK FEEL)
+========================= */
+.card {
+  background: var(--card);
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 14px;
+  line-height: 1.6;
+}
+
+/* highlight search */
+.highlight {
+  background: rgba(255, 230, 0, 0.15);
+  border-radius: 10px;
+  transition: 0.3s;
+}
