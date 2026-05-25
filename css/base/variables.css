@@ -1,0 +1,21 @@
+:root{
+
+  --bg:#f7f4ed;
+
+  --card:#ffffff;
+
+  --sidebar:#f7f4ed;
+
+  --gold:#d4af37;
+
+  --text:#1f2937;
+
+  --muted:#6b7280;
+
+  --shadow:
+  0 10px 25px rgba(0,0,0,.08);
+
+  --radius:16px;
+
+  --transition:.3s ease;
+}
