@@ -13,37 +13,37 @@ export const bab2 = {
   },
   {
     "no": 36,
-    "text": "Dahulu kala ada seorang raja yang memiliki kekuatan duniawi dan kekuatan ruhani.",
+    "text": "Dahulu kala, hiduplah seorang raja pemilik kekuasaan duniawi juga kekuatan spiritual.",
      "audio":"../audio/bab2/bait36.mp3"
   },
   {
     "no": 37,
-    "text": "Terjadilah bahwa pada suatu hari ia berkendara bersama para pengiringnya untuk berburu.",
+    "text": "Suatu hari, ia berkuda bersama para pengiringnya untuk berburu.",
      "audio":"../audio/bab2/bait37.mp3"
   },
   {
     "no": 38,
-    "text": "Di jalan raya, raja melihat seorang budak perempuan: jiwa raja terpesona olehnya.",
+    "text": "Di jalan besar, sang raja melihat seorang pelayan wanita: sang raja pun terpikat olehnya.",
      "audio":"../audio/bab2/bait38.mp3"
   },
   {
     "no": 39,
-    "text": "Karena burung itu, jiwanya, beterbangan di dalam sangkar, dia memberi uang dan membeli budak perempuan itu.",
+    "text": "Sebab burung jiwanya bergejolak dalam sangkar, ia berikan harta lalu membeli pelayan itu.",
      "audio":"../audio/bab2/bait39.mp3"
   },
   {
     "no": 40,
-    "text": "Setelah ia membelinya dan mencapai keinginannya, oleh takdir Ilahi perempuan itu pun jatuh sakit.⁴⁰",
+    "text": "Usai membelinya dan meraih keinginannya, atas takdir Ilahi, pelayan itu jatuh sakit.⁴⁰",
      "audio":"../audio/bab2/bait40.mp3"
   },
   {
     "no": 41,
-    "text": "Seseorang memiliki seekor keledai tetapi tidak punya pelana: (begitu) ia mendapatkan pelana, serigala membawa pergi keledainya.",
+    "text": "Seseorang memiliki keledai namun tanpa pelana: saat pelana didapat, serigala menerkam keledainya.",
      "audio":"../audio/bab2/bait41.mp3"
   },
   {
     "no": 42,
-    "text": "Ia memiliki kendi, tetapi tak ada air yang dapat diperoleh: ketika ia menemukan air, kendi itu pecah.",
+    "text": "Ia memiliki kendi namun tiada air: saat air ditemukan, kendinya pecah.",
      "audio":"../audio/bab2/bait42.mp3"
   },
   {
