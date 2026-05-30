@@ -1,16 +1,21 @@
 export function getSnippet(
-text,
-query
+
+  text,
+  query
+
 ){
 
   const safe =
-  text || "";
+    text || "";
 
   const lower =
-  safe.toLowerCase();
+    safe.toLowerCase();
+
+  const q =
+    query.toLowerCase();
 
   const index =
-  lower.indexOf(query);
+    lower.indexOf(q);
 
   if(index === -1){
 
@@ -21,11 +26,24 @@ query
 
   }
 
-  return (
+  const snippet =
 
     safe.slice(
       index,
       index + 80
+    );
+
+  const regex =
+    new RegExp(
+      `(${query})`,
+      "gi"
+    );
+
+  return (
+
+    snippet.replace(
+      regex,
+      `<mark>$1</mark>`
     )
 
     + "..."
