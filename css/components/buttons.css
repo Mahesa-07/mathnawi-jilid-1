@@ -1,11 +1,22 @@
 /* ========================================
-   NEXT BUTTON (UPGRADED)
+   NAVIGATION BUTTONS WRAPPER
 ======================================== */
 
-.next-btn {
-  display: block;
+.nav-buttons {
+  display: flex;
 
-  margin: 10px auto 50px;
+  gap: 12px;
+
+  margin: 10px 16px 50px;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.next-btn,
+.last-btn {
+  flex: 1;
 
   padding: 12px 16px;
 
@@ -24,40 +35,44 @@
 
   box-shadow: var(--shadow);
 
-  transition: transform 0.25s ease,
-              box-shadow 0.25s ease,
-              background 0.25s ease,
-              color 0.25s ease;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease,
+    color .25s ease;
 }
 
 /* ========================================
-   HOVER (FEEL LIFTED)
+   HOVER
 ======================================== */
 
-.next-btn:hover {
+.next-btn:hover,
+.last-btn:hover {
   transform: translateY(-2px);
 
-  background: rgba(212,175,55,0.08);
+  background: rgba(212,175,55,.08);
 
   color: var(--gold);
 
-  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
 }
 
 /* ========================================
-   ACTIVE (PRESS EFFECT)
+   ACTIVE
 ======================================== */
 
-.next-btn:active {
-  transform: scale(0.96);
+.next-btn:active,
+.last-btn:active {
+  transform: scale(.96);
 }
 
 /* ========================================
-   FOCUS (ACCESSIBILITY)
+   FOCUS
 ======================================== */
 
-.next-btn:focus-visible {
-  outline: 2px solid rgba(212,175,55,0.4);
+.next-btn:focus-visible,
+.last-btn:focus-visible {
+  outline: 2px solid rgba(212,175,55,.4);
   outline-offset: 3px;
 }
 
@@ -65,11 +80,10 @@
    MOBILE
 ======================================== */
 
-@media (max-width: 768px) {
-  .next-btn {
-    width: calc(100% - 32px);
-    margin: 10px 16px 40px;
+@media (max-width:768px) {
 
-    font-size: 13px;
+  .nav-buttons {
+    flex-direction: row;
   }
+
 }
